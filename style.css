@@ -1,0 +1,804 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Martian+Mono:wght@500&family=PT+Sans:wght@700&family=Rubik:wght@500&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Martian Mono', monospace;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+
+}
+.navbar {
+    background-color:black;
+    color: #fff;
+    position: relative;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+/* Estilos para el logo y el menú de navegación */
+.navbar-logo {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+.navbar-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar-menu li {
+    margin-right: 20px;
+}
+.navbar-menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos para el botón de menú en dispositivos móviles */
+.navbar-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.navbar-toggle span {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+@media only screen and (min-width: 320px) 
+{
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        width: 100%;
+        background-color:black;
+    }
+    .navbar-menu.active {
+        display: flex;
+    }
+    .navbar-menu li {
+        margin: 10px 0;
+        margin-left: 7%;
+    }
+    .navbar-toggle {
+        display: flex;
+    }
+    .inicio{
+    background-image: url(img/laptop-background.jpg); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenido */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-attachment: fixed; /* Fija la imagen en su lugar mientras se desplaza la página */
+    color: #fff; /* Color del texto para que sea legible en el fondo */
+    text-align: center; /* Centra el contenido horizontalmente */
+    padding: 100px 0; /* Espaciado interior para el contenido */
+    }
+    .inicio h1{
+        color: white;
+        text-align: center;
+        font-size: 25px;
+    }
+    .inicio p{
+        color: white;
+        text-align: center;
+        font-size: 20px;
+    }
+    .sobre-mi h2{
+        text-align: center;
+        color: rgb(40, 40, 40);
+    }
+    .sobre-mi p{
+        text-align: center;
+        color: rgb(40, 40, 40);
+        font-size: 15px;
+        margin-top: -10%;
+        padding: 10%;
+    }
+    img {
+        display: block; /* Elimina cualquier espacio adicional debajo de la imagen */
+        max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+        height: auto; /* La altura se ajustará automáticamente para mantener la proporción original */
+    }
+    .habilidades h2{
+        text-align: center;
+        color:rgb(40, 40, 40);
+    }
+    .habilidades .contenedor-habilidades{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .habilidades .html{
+        width: 8.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.25rem;
+        padding: 1.125rem;
+        background-color: #eaeaea;
+    }
+    .habilidades .css{
+        width: 8.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.25rem;
+        padding: 1.125rem;
+        background-color: #eaeaea;
+    }
+    .habilidades .js{
+        width: 8.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.25rem;
+        padding: 1.125rem;
+        background-color: #eaeaea;
+    }
+    .habilidades .sass{
+        width: 8.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.25rem;
+        padding: 1.125rem;
+        background-color: #eaeaea;
+    }
+    .habilidades .git{
+        width: 8.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.25rem;
+        padding: 1.125rem;
+        background-color: #eaeaea;
+        
+    }
+    .habilidades .node {
+        width: 8.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.25rem;
+        padding: 1.125rem;
+        background-color: #eaeaea;
+    }
+    .habilidades .bs{
+        width: 8.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.25rem;
+        padding: 1.125rem;
+        background-color: #eaeaea;
+    }
+    .habilidades img{
+        max-width: 100%; /* La imagen se ajustará al 100% del ancho del contenedor */
+        height: auto; /* La altura se ajustará automáticamente para mantener la proporción original */
+        margin-left: 29%;
+        /* margin-top: 10%; */
+        text-align: center; 
+    }
+    .servicios-general{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 5px;
+    }
+    .servicios-general h2{
+        margin-top: 40%;
+        text-align: center;
+        color: rgb(40, 40, 40);
+    }
+    .servicio-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border-bottom: 0.3125rem solid transparent;
+        padding: 1.25rem;
+        background-color: #eaeaea;
+        transition: all 350ms ease;
+        margin: 1rem;
+    }
+    .servicio-1 img{
+        margin-top: 5%;
+        transition: transform 0.2s ease-in-out;
+    }
+    .servicio-1 img:hover{
+        transform: scale(1.4);
+        filter: grayscale(30%) brightness(100%);
+    }
+    .servicio-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border-bottom: 0.3125rem solid transparent;
+        padding: 1.25rem;
+        background-color: #eaeaea;
+        transition: all 350ms ease;
+        margin: 1rem;
+    }
+    .servicio-2 img{
+        margin-top: 5%;
+        transition: transform 0.2s ease-in-out;
+    }
+    .servicio-2 img:hover{
+        transform: scale(1.4);
+        filter: grayscale(30%) brightness(100%);
+    }
+    .servicio-3{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border-bottom: 0.3125rem solid transparent;
+        padding: 1.25rem;
+        background-color: #eaeaea;
+        transition: all 350ms ease;
+        margin: 1rem;
+    }
+    .servicio-3 img{
+        margin-top: 5%;
+        transition: transform 0.2s ease-in-out;
+    }
+    .servicio-3 img:hover{
+        transform: scale(1.4);
+        filter: grayscale(30%) brightness(100%);
+    }
+    .servicio-4{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border-bottom: 0.3125rem solid transparent;
+        padding: 1.25rem;
+        background-color: #eaeaea;
+        transition: all 350ms ease;
+        margin: 1rem;
+    }
+    .servicio-4 img{
+        margin-top: 5%;
+        transition: transform 0.2s ease-in-out;
+    }
+    .servicio-4 img:hover{
+        transform: scale(1.4);
+        filter: grayscale(30%) brightness(100%);
+    }
+    .servicio-5{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border-bottom: 0.3125rem solid transparent;
+        padding: 1.25rem;
+        background-color: #eaeaea;
+        transition: all 350ms ease;
+        margin: 1rem;
+    }
+    .servicio-5 img{
+        margin-top: 5%;
+        transition: transform 0.2s ease-in-out;
+    }
+    .servicio-5 img:hover{
+        transform: scale(1.4);
+        filter: grayscale(30%) brightness(100%);
+    }
+    .servicio-6{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border-bottom: 0.3125rem solid transparent;
+        padding: 1.25rem;
+        background-color: #eaeaea;
+        transition: all 350ms ease;
+        margin: 1rem;
+    }
+    .servicio-6 img{
+        margin-top: 5%;
+        transition: transform 0.2s ease-in-out;
+    }
+    .servicio-6 img:hover{
+        transform: scale(1.4);
+        filter: grayscale(30%) brightness(100%);
+    }
+    .contacto{
+        text-align: center;
+    }
+    .contacto h2{
+        text-align: center;
+        font: 15px;
+    }
+    .contacto h2::after{
+        content: "";
+        display: block;
+        width: 11.25rem;
+        height: 0.3125rem;
+        background-color: rgb(76, 147, 209);
+        margin: 0.625rem auto 1.25rem;
+    }
+    .contacto input{
+        width: 80%;
+        margin-top: 5%;
+        font-size: 10px;
+        padding: 0.75rem;
+        margin-bottom: 5%;
+        border: 2px solid rgb(76, 147, 209);
+    }
+    .contacto textarea{
+        width: 280px;
+        height: 30px;
+        margin-left: 0px;
+    }
+    .footer{
+        background-color: black;
+        color: grey;
+        text-align: center;
+        padding: 1%;
+        font-size: 19px;
+    }
+}
+
+
+@media only screen and (min-width: 375px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        width: 100%;
+        background-color:black;
+    }
+    .navbar-menu.active {
+        display: flex;
+    }
+    .navbar-menu li {
+        margin: 10px 0;
+        margin-left: 7%;
+    }
+    .navbar-toggle {
+        display: flex;
+    }
+    .inicio{
+    background-image: url(img/laptop-background.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    color: #fff;
+    text-align: center; 
+    padding: 100px 0; 
+    }
+    .inicio h1{
+        color: white;
+        text-align: center;
+    }
+    .inicio p{
+        color: white;
+        text-align: center;
+        font-size: 30px;
+    }
+    .sobre-mi h2{
+        text-align: center;
+        color: rgb(40, 40, 40);
+    }
+    .sobre-mi p{
+        text-align: center;
+        color: rgb(40, 40, 40);
+        margin-top: -10%;
+        padding: 10%;
+    }
+    img {
+        display: block; 
+        max-width: 100%; 
+        height: auto; 
+    }
+    .habilidades h2{
+        text-align: center;
+        color:rgb(40, 40, 40);
+    }
+    .habilidades img{
+        max-width: 100%;
+        height: auto; 
+        margin-left: 29%;
+        text-align: center; 
+    }
+    .servicios-general{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+    }
+    .servicios-general h2{
+        margin-top: 40%;
+        text-align: center;
+        color: rgb(40, 40, 40);
+    }
+    
+    .contacto{
+        text-align: center;
+    }
+    .contacto h2::after{
+        content: "";
+        display: block;
+        width: 11.25rem;
+        height: 0.3125rem;
+        background-color: rgb(76, 147, 209);
+        margin: 0.625rem auto 1.25rem;
+    }
+    .contacto input{
+        width: 80%;
+        margin-top: 5%;
+        font-size: 20px;
+        padding: 0.75rem;
+        margin-bottom: 5%;
+        border: 2px solid rgb(76, 147, 209);
+    }
+    .contacto textarea{
+        width: 86%;
+        margin-top: 5%;
+        margin-left: 0%;
+        min-height: 4.75rem;
+        max-height: 50vh;
+    }
+    .footer{
+        background-color: black;
+        color: grey;
+        text-align: center;
+        padding: 1%;
+        font-size: 19px;
+    }
+} 
+
+    @media only screen and (min-width: 425px) {
+    .navbar-container {
+        padding: 10px; /* Reduce el espaciado horizontal en pantallas pequeñas */
+        padding-bottom: 3%;
+    }
+    .navbar-menu {
+        display: none; /* Oculta el menú en pantallas pequeñas */
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: black;
+        width: 100%;
+        z-index: 1;
+    }
+    .navbar-menu.active {
+        display: flex; /* Muestra el menú cuando se hace clic en el botón */
+    }
+    .navbar-menu li {
+        margin-top: 2%;
+        margin-left: -0.4eM;
+        padding-left: 4%;
+        padding-bottom: 3%;
+    }
+    .navbar-menu a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 17px;
+    }
+    .navbar-toggle {
+        display: flex; /* Muestra el botón en pantallas pequeñas */
+        cursor: pointer;
+    }
+    .inicio{
+        background-image: url(img/laptop-background.jpg); /* Ruta de la imagen de fondo */
+        background-size: cover; /* Ajusta la imagen para cubrir todo el contenido */
+        background-repeat: no-repeat; /* Evita la repetición de la imagen */
+        background-attachment: fixed; /* Fija la imagen en su lugar mientras se desplaza la página */
+        color: #fff; /* Color del texto para que sea legible en el fondo */
+        text-align: center; /* Centra el contenido horizontalmente */
+        padding: 100px 0; /* Espaciado interior para el contenido */
+        }
+        .inicio h1{
+            color: white;
+            text-align: center;
+        }
+        .inicio p{
+            color: white;
+            text-align: center;
+            font-size: 30px;
+        }
+        .sobre-mi h2{
+            text-align: center;
+            color: rgb(40, 40, 40);
+        }
+        .sobre-mi p{
+            text-align: center;
+            color: rgb(40, 40, 40);
+            margin-top: -10%;
+            padding: 10%;
+        }
+        img {
+            display: block; /* Elimina cualquier espacio adicional debajo de la imagen */
+            max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+            height: auto; /* La altura se ajustará automáticamente para mantener la proporción original */
+        }
+        .habilidades h2 {
+            text-align: center;
+            color: rgb(40, 40, 40);
+        }
+        
+        .servicios-general{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1.5rem;
+        }
+        .servicios-general h2 {
+            margin-top: 40%;
+            text-align: center;
+            color: rgb(40, 40, 40);
+        }
+        
+        .contacto {
+            text-align: center;
+        }
+        .contacto p{
+            padding-right: 20%;
+            margin-left: 21%;
+        }
+        .contacto input {
+            width: 80%;
+            margin-top: 5%;
+            font-size: 20px;
+            padding: 0.75rem;
+            margin-bottom: 5%;
+            border: 2px solid rgb(76, 147, 209);
+        }
+        .contacto textarea {
+            width: 86%;
+            margin-top: 5%;
+            margin-left: 0%;
+            min-height: 4.75rem;
+            max-height: 50vh;
+        }
+        .footer {
+            background-color: black;
+            color: grey;
+            text-align: center;
+            padding: 1%;
+            font-size: 19px;
+        }
+}
+
+@media only screen and (min-width: 768px)
+{
+    .sobre-mi h2 {
+        text-align: center;
+        color: rgb(40, 40, 40);
+        font-size: 25px;
+    }
+    .sobre-mi p {
+        font-size: 15px;
+    }
+    .habilidades h2 {
+        text-align: center;
+        color: rgb(40, 40, 40);
+        font-size: 25px;
+    }
+    .servicios-general {
+        margin-top: -20%;
+    }
+    .servicios-general h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .servicios {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(320px, 1fr)); /* Dos columnas cuando sea posible */
+        grid-gap: 20px; /* Espacio entre los elementos */
+    }
+    
+    .servicio {
+        padding: 20px;
+    }
+    .contacto{
+        font-size: 30px;
+    }
+    .contacto input{
+        margin-top: 2%;
+    }
+    .contacto textarea {
+        margin-top: 2%;
+        min-height: 5.75rem;
+        width: 83%;
+    }
+}
+@media only screen and (min-width: 1024px)
+{
+    .navbar-logo {
+        font-size: 30px;
+    }
+    .navbar-menu li {
+        padding-bottom: 0%;
+    }
+    .navbar-menu {
+        display: contents; /* Mostrar las opciones del menú en pantallas grandes */
+    }
+    .navbar-menu a {    
+        font-size: 20px;
+    }
+    .navbar-toggle {
+        display: none; /* Ocultar el menú hamburguesa en pantallas grandes */
+    }
+    .inicio {
+        padding: 20%;
+    }
+    .servicio {
+        padding: 20px;
+        font-size: 25px;
+        padding-right: 1rem;
+    }
+    .servicio p {
+        padding-left: 47px;
+        margin-left: 8px;
+        padding-right: 0px;
+    }
+    .servicios {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 900px)); /* Dos columnas cuando sea posible */
+        grid-gap: 5px; /* Espacio entre los elementos */
+        margin: 50px;
+    }
+    .servicio {
+        padding: 20px;
+        font-size: 20px;
+    }
+    .servicio h3{
+        font-size: 20px;
+    }
+    .servicio p{
+        font-size: 15px;
+    }
+    .contacto h2{
+        font-size: 25px;
+    }
+    
+    .contacto p{
+        font-size: 15px;
+    }
+    .contacto input{
+        margin-top: 0px;
+        height: 20px;
+        width: 700px;
+    }
+    .contacto textarea {
+        width: 720px;
+        height: 30px;
+        margin-top: 1px;
+    }
+    #submit {
+        margin-top: 0px;
+        height: 40px;
+        width: 600px;
+    }
+}
+
+@media only screen and (min-width: 1440px)
+{
+    .navbar-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    .inicio {
+        padding: 12%;
+    }
+    .sobre-mi h2 {
+        font-size: 35px;
+    }
+    .sobre-mi p {
+        font-size: 20px;
+    }
+    .habilidades .contenedor-habilidades {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .habilidades h2 {
+        font-size: 35px;
+    }
+    .servicios h2 {
+        margin-top: 20%;
+    }
+    .servicios-general {
+        margin: 100px;
+    }
+    .servicios-general h2 {
+        font-size: 35px;
+        margin-top: 300px;
+        text-align: center;
+    }
+    .servicios {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(320px, 1fr)); /* Dos columnas cuando sea posible */
+        grid-gap: 20px; /* Espacio entre los elementos */
+    }
+    .servicio {
+        padding: 20px;
+        font-size: 20px;
+    }
+    .servicio-1 p {
+        padding-right: 1%;
+        padding-left: 19%;
+        margin-left: -17%;
+    }
+    .servicio-2 p {
+        padding-right: 1%;
+        padding-left: 19%;
+        margin-left: -17%;
+    }
+    .servicio-3 p {
+        padding-right: 1%;
+        padding-left: 19%;
+        margin-left: -17%;
+    }
+    .servicio-4 p {
+        padding-right: 1%;
+        padding-left: 19%;
+        margin-left: -17%;
+    }
+    .servicio-5 p {
+        padding-right: 1%;
+        padding-left: 19%;
+        margin-left: -17%;
+    }
+    .servicio-6 p {
+        padding-right: 1%;
+        padding-left: 19%;
+        margin-left: -17%;
+    }
+    .contacto input{
+        margin-top: 0px;
+        height: 40px;
+        width: 800px;
+    }
+    .contacto textarea {
+        width: 822px;
+        height: 90px;
+        margin-top: -9px;
+    }
+    #submit {
+        margin-top: 0px;
+        height: 50px;
+        width: 607px;
+    }
+}
+
+
+@media only screen and (min-width: 1700px)
+{
+    .servicios {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(320px, 1fr)); /* Dos columnas cuando sea posible */
+        grid-gap: 20px; /* Espacio entre los elementos */
+    }
+}
