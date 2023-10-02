@@ -110,7 +110,7 @@ body {
     }
     img {
         display: block; /* Elimina cualquier espacio adicional debajo de la imagen */
-        max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+        min-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
         height: auto; /* La altura se ajustará automáticamente para mantener la proporción original */
     }
     .habilidades h2{
@@ -196,7 +196,7 @@ body {
         background-color: #eaeaea;
     }
     .habilidades img{
-        max-width: 100%; /* La imagen se ajustará al 100% del ancho del contenedor */
+        min-width: 100%; /* La imagen se ajustará al 100% del ancho del contenedor */
         height: auto; /* La altura se ajustará automáticamente para mantener la proporción original */
         margin-left: 29%;
         /* margin-top: 10%; */
@@ -212,6 +212,9 @@ body {
         text-align: center;
         color: rgb(40, 40, 40);
     }
+    .servicio img{
+        height: 70px;
+    }
     .servicio-1{
         display: flex;
         flex-direction: column;
@@ -222,6 +225,11 @@ body {
         background-color: #eaeaea;
         transition: all 350ms ease;
         margin: 1rem;
+    }
+    .servicio-1 p{
+        margin-top: -5px;
+        padding: 20px;
+        margin-left: 20px;
     }
     .servicio-1 img{
         margin-top: 5%;
@@ -242,6 +250,13 @@ body {
         transition: all 350ms ease;
         margin: 1rem;
     }
+    .servicio-2 p{
+        padding: 0px;
+        padding-left: 16px;
+        padding-right: 8px;
+        margin-left: 17px;
+        margin-top: -5px;
+    }
     .servicio-2 img{
         margin-top: 5%;
         transition: transform 0.2s ease-in-out;
@@ -261,6 +276,13 @@ body {
         transition: all 350ms ease;
         margin: 1rem;
     }
+    .servicio-3 p{
+        padding: 0px;
+        padding-left: 19px;
+        padding-right: 0px;
+        margin-left: 33px;
+        margin-top: -5px;
+    }
     .servicio-3 img{
         margin-top: 5%;
         transition: transform 0.2s ease-in-out;
@@ -279,6 +301,13 @@ body {
         background-color: #eaeaea;
         transition: all 350ms ease;
         margin: 1rem;
+    }
+    .servicio-4 p{
+        padding: 0px;
+        padding-left: 35px;
+        padding-right: 0px;
+        margin-left: -21px;
+        margin-top: -5px;
     }
     .servicio-4 img{
         margin-top: 5%;
@@ -303,6 +332,13 @@ body {
         margin-top: 5%;
         transition: transform 0.2s ease-in-out;
     }
+    .servicio-5 p{
+        padding: 0px;
+        padding-left: 35px;
+        padding-right: 0px;
+        margin-left: -21px;
+        margin-top: -5px;
+    }
     .servicio-5 img:hover{
         transform: scale(1.4);
         filter: grayscale(30%) brightness(100%);
@@ -318,6 +354,13 @@ body {
         transition: all 350ms ease;
         margin: 1rem;
     }
+    .servicio-6 p{
+        padding: 0px;
+        padding-left: 40px;
+        padding-right: 0px;
+        margin-left: -15px;
+        margin-top: -5px;
+    }
     .servicio-6 img{
         margin-top: 5%;
         transition: transform 0.2s ease-in-out;
@@ -331,14 +374,14 @@ body {
     }
     .contacto h2{
         text-align: center;
-        font: 15px;
+        font-size: 15px;
     }
     .contacto h2::after{
         content: "";
         display: block;
         width: 11.25rem;
         height: 0.3125rem;
-        background-color: rgb(76, 147, 209);
+        background-color: #d3c2c2;
         margin: 0.625rem auto 1.25rem;
     }
     .contacto input{
@@ -347,12 +390,13 @@ body {
         font-size: 10px;
         padding: 0.75rem;
         margin-bottom: 5%;
-        border: 2px solid rgb(76, 147, 209);
+        border: 2px solid  #d3c2c2
     }
     .contacto textarea{
         width: 280px;
         height: 30px;
         margin-left: 0px;
+        border: 2px solid  #d3c2c2
     }
     .footer{
         background-color: black;
@@ -362,7 +406,6 @@ body {
         font-size: 19px;
     }
 }
-
 
 @media only screen and (min-width: 375px) {
     .navbar-menu {
@@ -385,13 +428,13 @@ body {
         display: flex;
     }
     .inicio{
-    background-image: url(img/laptop-background.jpg);
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
-    color: #fff;
-    text-align: center; 
-    padding: 100px 0; 
+        background-image: url(img/laptop-background.jpg);
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-attachment: fixed; 
+        color: #fff;
+        text-align: center; 
+        padding: 96px 0; 
     }
     .inicio h1{
         color: white;
@@ -414,7 +457,7 @@ body {
     }
     img {
         display: block; 
-        max-width: 100%; 
+        min-width: 100%; 
         height: auto; 
     }
     .habilidades h2{
@@ -422,7 +465,7 @@ body {
         color:rgb(40, 40, 40);
     }
     .habilidades img{
-        max-width: 100%;
+        min-width: 100%;
         height: auto; 
         margin-left: 29%;
         text-align: center; 
@@ -446,7 +489,6 @@ body {
         display: block;
         width: 11.25rem;
         height: 0.3125rem;
-        background-color: rgb(76, 147, 209);
         margin: 0.625rem auto 1.25rem;
     }
     .contacto input{
@@ -455,14 +497,13 @@ body {
         font-size: 20px;
         padding: 0.75rem;
         margin-bottom: 5%;
-        border: 2px solid rgb(76, 147, 209);
     }
     .contacto textarea{
         width: 86%;
         margin-top: 5%;
         margin-left: 0%;
         min-height: 4.75rem;
-        max-height: 50vh;
+        min-height: 50vh;
     }
     .footer{
         background-color: black;
@@ -536,7 +577,7 @@ body {
         }
         img {
             display: block; /* Elimina cualquier espacio adicional debajo de la imagen */
-            max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+            min-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
             height: auto; /* La altura se ajustará automáticamente para mantener la proporción original */
         }
         .habilidades h2 {
@@ -568,14 +609,13 @@ body {
             font-size: 20px;
             padding: 0.75rem;
             margin-bottom: 5%;
-            border: 2px solid rgb(76, 147, 209);
         }
         .contacto textarea {
             width: 86%;
             margin-top: 5%;
             margin-left: 0%;
             min-height: 4.75rem;
-            max-height: 50vh;
+            min-height: 50vh;
         }
         .footer {
             background-color: black;
@@ -601,6 +641,13 @@ body {
         color: rgb(40, 40, 40);
         font-size: 25px;
     }
+    .habilidades .contenedor-habilidades {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+        justify-content: center;
+        align-items: center;
+    }
     .servicios-general {
         margin-top: -20%;
     }
@@ -617,8 +664,12 @@ body {
     .servicio {
         padding: 20px;
     }
-    .contacto{
-        font-size: 30px;
+    .contacto h2 {
+        text-align: center;
+        font-size: 25px;
+    }
+    .contacto p {
+        font-size: 20px;
     }
     .contacto input{
         margin-top: 2%;
@@ -633,15 +684,19 @@ body {
 {
     .navbar-logo {
         font-size: 30px;
+        padding-right: 20%;
+        margin-right: -3%;
     }
     .navbar-menu li {
         padding-bottom: 0%;
+        padding-right: 0%;
     }
     .navbar-menu {
         display: contents; /* Mostrar las opciones del menú en pantallas grandes */
     }
-    .navbar-menu a {    
+    .navbar-menu a {
         font-size: 20px;
+        margin-left: -130px;
     }
     .navbar-toggle {
         display: none; /* Ocultar el menú hamburguesa en pantallas grandes */
@@ -649,15 +704,47 @@ body {
     .inicio {
         padding: 20%;
     }
+    .inicio h1 {
+        font-size: 35px;
+    }
+    .sobre-mi p {
+        font-size: 20px;
+    }
+    .habilidades .contenedor-habilidades {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7.1rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
     .servicio {
         padding: 20px;
         font-size: 25px;
         padding-right: 1rem;
     }
-    .servicio p {
-        padding-left: 47px;
-        margin-left: 8px;
-        padding-right: 0px;
+    .servicio p{
+        font-size: 15px;
+    }
+    .servicio-1 p {
+        padding: 0px;
+        margin-left: 15px;
+        margin-top: -5px;
+    }
+    .servicio-2 p {
+        padding: 0px;
+        padding-left: 0px;
+        padding-right: 20px;
+        margin-left: 20px;
+        margin-top: -5px;
+    }
+    .servicio-3 p {
+        padding: 0px;
+        padding-left: 1xp;
+        padding-right: 15px;
+        margin-left: 46px;
+        margin-top: -5px;
+        padding-left: 0px;
     }
     .servicios {
         display: grid;
@@ -665,6 +752,7 @@ body {
         grid-gap: 5px; /* Espacio entre los elementos */
         margin: 50px;
     }
+
     .servicio {
         padding: 20px;
         font-size: 20px;
@@ -672,15 +760,11 @@ body {
     .servicio h3{
         font-size: 20px;
     }
-    .servicio p{
-        font-size: 15px;
-    }
     .contacto h2{
         font-size: 25px;
     }
-    
-    .contacto p{
-        font-size: 15px;
+    .contacto p {
+        font-size: 20px;
     }
     .contacto input{
         margin-top: 0px;
@@ -694,13 +778,30 @@ body {
     }
     #submit {
         margin-top: 0px;
-        height: 40px;
+        height: 50px;
         width: 600px;
+        padding-left: 30px;
     }
 }
 
 @media only screen and (min-width: 1440px)
 {
+    .navbar-logo {
+        font-size: 30px;
+        padding-right: 14%;
+        margin-right: 15%;
+    }
+    .navbar-menu li {
+        padding-bottom: 0%;
+        padding-right: 0%;
+    }
+    .navbar-menu {
+        display: contents; /* Mostrar las opciones del menú en pantallas grandes */
+    }
+    .navbar-menu a {
+        font-size: 20px;
+        margin-left: -130px;
+    }
     .navbar-container {
         display: flex;
         justify-content: space-around;
@@ -708,20 +809,28 @@ body {
         padding: 10px 20px;
     }
     .inicio {
-        padding: 12%;
+        padding: 14%;
+    }
+    .inicio h1 {
+        font-size: 45px;
     }
     .sobre-mi h2 {
         font-size: 35px;
     }
     .sobre-mi p {
         font-size: 20px;
+        padding-right: 25%;
+        padding-left: 25%;
     }
     .habilidades .contenedor-habilidades {
         display: flex;
         flex-wrap: wrap;
-        gap: 8.5rem;
+        gap: 5.5rem;
         justify-content: center;
+        padding: 220px;
+        margin: 56px;
         align-items: center;
+        margin-top: -200px;
     }
     .habilidades h2 {
         font-size: 35px;
@@ -734,7 +843,7 @@ body {
     }
     .servicios-general h2 {
         font-size: 35px;
-        margin-top: 300px;
+        margin-top: -70px;
         text-align: center;
     }
     .servicios {
@@ -792,13 +901,25 @@ body {
         width: 607px;
     }
 }
-
-
-@media only screen and (min-width: 1700px)
+@media only screen and (min-width: 1900px)
 {
-    .servicios {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(320px, 1fr)); /* Dos columnas cuando sea posible */
-        grid-gap: 20px; /* Espacio entre los elementos */
+    .inicio {
+        padding: 15%;
+    }
+    .sobre-mi {
+        font-size: 25px;
+    }
+    .sobre-mi p{
+        font-size: 15px;
+    }
+    .habilidades .contenedor-habilidades {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5.5rem;
+        justify-content: center;
+        padding: 220px;
+        margin: 56px;
+        align-items: center;
+        margin-top: -200px;
     }
 }
